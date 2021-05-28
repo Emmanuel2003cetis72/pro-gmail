@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> programa para calcular el area de un cubo </h2>
+<p>
+    <label>Dame el lado</label>
+    <input id="dato">
+    
+    <button type="button" onclick="calcular()">calcular</button>
+
+</p>
+<p><label>Area </label>
+<p id="resultado"> </p>
+<p><label>volumen </label>
+<p id="resultado2"> </p>
+    <script>
+        function calcular()
+        {
+            var area=0;
+            var lado=0; 
+            var volumen=0
+            lado=parseInt(document.getElementById("dato").value);
+            area=6*(lado**2)
+            volumen= lado**3;
+            document.getElementById("resultado").innerHTML=area;
+            document.getElementById("resultado2").innerHTML=volumen;
+        }
+    </script>
+
+</body>
+</html>
